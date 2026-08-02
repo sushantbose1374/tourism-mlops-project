@@ -255,4 +255,3 @@ if st.button("Predict Purchase"):
     st.write("### Input Summary")
 
     st.dataframe(input_data)
-)
