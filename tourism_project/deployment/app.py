@@ -168,7 +168,7 @@ designation = st.selectbox(
 income = st.number_input(
     "Monthly Income",
     value=25000.0
-
+)
     # -------------------------------------------------------
 # Prediction
 # -------------------------------------------------------
