@@ -33,9 +33,16 @@ the Wellness Tourism Package.
 # Load Model Bundle
 # -------------------------------------------------------
 
-bundle = joblib.load(
-    "model.pkl"
-)
+#_________________________________________________________
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+bundle = joblib.load(MODEL_PATH)
+
+#_________________________________________________________
 
 model = bundle["model"]
 
